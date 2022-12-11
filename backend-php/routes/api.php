@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('/sms', [ServiceRequests::class, 'recieveSms']);
-Route::post('/message', [ServiceRequests::class, 'otprequest']);
+Route::get('/message', [ServiceRequests::class, 'otprequest']);
 
 Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
     return $request->user();

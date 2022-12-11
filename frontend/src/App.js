@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-regular-svg-icons';
 import { useState } from 'react';
 
+import axios from 'axios';
+
 function App() {
   const [status, setstatus] = useState(0)
   setTimeout(() => {
