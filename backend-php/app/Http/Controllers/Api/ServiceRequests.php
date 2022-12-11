@@ -59,7 +59,6 @@ class ServiceRequests extends Controller
 
         if ($auth_req) {
             return response()->json([
-                view('reply'),
                 'status' => 200,
                 'message' => 'SMS recieved',
             ]);
